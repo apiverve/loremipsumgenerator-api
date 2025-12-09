@@ -1,0 +1,84 @@
+openapi: 3.0.4
+info:
+  title: Lorem Ipsum Generator
+  description: Lorem Ipsum Generator is a simple tool for generating lorem ipsum text. It returns the generated text.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/loremipsumgenerator:
+    get:
+      summary: Generate Lorem Ipsum
+      description: Lorem Ipsum Generator is a simple tool for generating lorem ipsum text. It returns the generated text.
+      operationId: loremipsumgenerator
+      parameters:
+      - name: paragraphs
+        default: '1'
+        in: query
+        schema:
+          type: integer
+        required: false
+        description: The number of paragraphs to generate
+        example: '3'
+      - name: startwithlorem
+        default: true
+        in: query
+        schema:
+          type: boolean
+        required: false
+        description: Start the text with 'Lorem ipsum dolor sit amet'
+        example: true
+      - name: maxlength
+        default: '0'
+        in: query
+        schema:
+          type: integer
+        required: false
+        description: The maximum length of the generated text
+        example: '100'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  words: 62
+                  sentences: 5
+                  text: Lorem ipsum dolor sit amet nulla sint eiusmod ut nulla et reprehenderit quis laborum do. Duis irure consequat ut consequat nisi non velit dolore culpa nulla. Sunt deserunt dolore culpa ex qui non laboris cillum sint labore non amet aliqua reprehenderit. Nisi culpa ea magna ea ex id. Consectetur eiusmod voluptate aliquip eu dolor anim consequat amet non deserunt enim velit incididunt.
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
