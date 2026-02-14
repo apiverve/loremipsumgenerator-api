@@ -15,9 +15,9 @@ const api = new loremipsumgeneratorAPI({
 
 // Example query
 var query = {
-  paragraphs: 3,
+  paragraphs: 1,
   startwithlorem: true,
-  maxlength: 100
+  maxlength: 0
 };
 
 // Make the API request using callback
