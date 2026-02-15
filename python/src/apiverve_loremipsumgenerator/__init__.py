@@ -1,1 +1,3 @@
-from .apiClient import LoremipsumgeneratorAPIClient
+from .apiClient import LoremipsumgeneratorAPIClient, LoremipsumgeneratorAPIClientError
+
+__all__ = ['LoremipsumgeneratorAPIClient', 'LoremipsumgeneratorAPIClientError']
