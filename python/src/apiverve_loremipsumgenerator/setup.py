@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_loremipsumgenerator',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='Lorem Ipsum Generator is a simple tool for generating lorem ipsum text. It returns the generated text.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/loremipsumgenerator',
-        'Source': 'https://github.com/apiverve/loremipsumgenerator-api',
-        'Bug Tracker': 'https://github.com/apiverve/loremipsumgenerator-api/issues'
-    },
+    url='https://apiverve.com/marketplace/loremipsumgenerator?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
