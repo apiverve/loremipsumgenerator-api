@@ -44,7 +44,11 @@ from apiverve_loremipsumgenerator.apiClient import LoremipsumgeneratorAPIClient
 # Initialize the client with your APIVerve API key
 api = LoremipsumgeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "paragraphs": 1, "startwithlorem": true, "maxlength": 100 }
+query = {
+    "paragraphs": 1,
+    "startwithlorem": true,
+    "maxlength": 100
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "paragraphs": 1, "startwithlorem": true, "maxlength": 100 }
+query = {
+    "paragraphs": 1,
+    "startwithlorem": true,
+    "maxlength": 100
+}
 ```
 
 ###### Simple Request
@@ -122,7 +130,11 @@ from apiverve_loremipsumgenerator.apiClient import LoremipsumgeneratorAPIClient,
 
 api = LoremipsumgeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "paragraphs": 1, "startwithlorem": true, "maxlength": 100 }
+query = {
+    "paragraphs": 1,
+    "startwithlorem": true,
+    "maxlength": 100
+}
 
 try:
     result = api.execute(query)
@@ -143,7 +155,11 @@ from apiverve_loremipsumgenerator.apiClient import LoremipsumgeneratorAPIClient,
 
 api = LoremipsumgeneratorAPIClient("[YOUR_API_KEY]")
 
-query = { "paragraphs": 1, "startwithlorem": true, "maxlength": 100 }
+query = {
+    "paragraphs": 1,
+    "startwithlorem": true,
+    "maxlength": 100
+}
 
 try:
     result = api.execute(query)
@@ -177,7 +193,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_loremipsumgenerator.apiClient import LoremipsumgeneratorAPIClient, LoremipsumgeneratorAPIClientError
 
-query = { "paragraphs": 1, "startwithlorem": true, "maxlength": 100 }
+query = {
+    "paragraphs": 1,
+    "startwithlorem": true,
+    "maxlength": 100
+}
 
 # Using context manager ensures proper cleanup
 with LoremipsumgeneratorAPIClient("[YOUR_API_KEY]") as api:
@@ -203,7 +223,11 @@ from apiverve_loremipsumgenerator.apiClient import LoremipsumgeneratorAPIClient
 # Enable debug mode
 api = LoremipsumgeneratorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "paragraphs": 1, "startwithlorem": true, "maxlength": 100 }
+query = {
+    "paragraphs": 1,
+    "startwithlorem": true,
+    "maxlength": 100
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -218,8 +242,13 @@ from apiverve_loremipsumgenerator.apiClient import LoremipsumgeneratorAPIClient
 
 api = LoremipsumgeneratorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "paragraphs": 1,
+    "startwithlorem": true,
+    "maxlength": 100
+}
+
 try:
-    query = { "paragraphs": 1, "startwithlorem": true, "maxlength": 100 }
     result = api.execute(query)
     print(result)
 finally:
