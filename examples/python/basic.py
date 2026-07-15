@@ -17,11 +17,14 @@ def call_loremipsumgenerator_api():
     Make a GET request to the Lorem Ipsum Generator API
     """
     try:
+        # Query parameters
+        params &#x3D; {&#x27;paragraphs&#x27;: 3, &#x27;startwithlorem&#x27;: true, &#x27;maxlength&#x27;: 100}
+
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.get(API_URL, headers=headers, params=params)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
