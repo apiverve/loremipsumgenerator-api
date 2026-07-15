@@ -13,7 +13,14 @@ const API_URL = 'https://api.apiverve.com/v1/loremipsumgenerator';
  */
 async function callLoremIpsumGeneratorAPI() {
   try {
-    const response = await fetch(API_URL, {
+    // Query parameters
+    const params &#x3D; new URLSearchParams({
+            paragraphs: 3,
+            startwithlorem: true,
+            maxlength: 100
+        });
+
+    const response = await fetch(`${API_URL}?${params}`, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
