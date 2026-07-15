@@ -30,7 +30,13 @@ The Lorem Ipsum Generator API provides a simple, reliable way to integrate lorem
 ```javascript
 async function callLoremIpsumGeneratorAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/loremipsumgenerator', {
+        const params = new URLSearchParams({
+            paragraphs: 3,
+            startwithlorem: true,
+            maxlength: 100
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/loremipsumgenerator?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +56,7 @@ callLoremIpsumGeneratorAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/loremipsumgenerator?param=value" \
+curl -X GET "https://api.apiverve.com/v1/loremipsumgenerator?paragraphs=3&startwithlorem=true&maxlength=100" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +156,7 @@ go get github.com/apiverve/loremipsumgenerator-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +175,7 @@ go get github.com/apiverve/loremipsumgenerator-api/go
 The Lorem Ipsum Generator API is commonly used for:
 
 - **Web Applications** - Add lorem ipsum generator features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with lorem ipsum generator capabilities
 - **Data Pipelines** - Process and analyze data at scale
