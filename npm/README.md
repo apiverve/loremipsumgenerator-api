@@ -128,9 +128,9 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "words": 62,
-    "sentences": 5,
-    "text": "Lorem ipsum dolor sit amet nulla sint eiusmod ut nulla et reprehenderit quis laborum do. Duis irure consequat ut consequat nisi non velit dolore culpa nulla. Sunt deserunt dolore culpa ex qui non laboris cillum sint labore non amet aliqua reprehenderit. Nisi culpa ea magna ea ex id. Consectetur eiusmod voluptate aliquip eu dolor anim consequat amet non deserunt enim velit incididunt."
+    "words": 73,
+    "sentences": 7,
+    "text": "Lorem ipsum dolor sit amet aliquip duis veniam dolore ea eu ex ad occaecat in sunt amet sit non esse. Proident fugiat eu nisi et duis excepteur. Aute ipsum pariatur labore do pariatur exercitation excepteur qui exercitation aliquip ut mollit. Reprehenderit ipsum velit eiusmod duis nulla. Id eu aute mollit cillum dolore adipisicing non occaecat. Laboris commodo magna occaecat officia amet sunt aliqua et enim enim incididunt in. Magna laborum irure nulla ea."
   }
 }
 ```
