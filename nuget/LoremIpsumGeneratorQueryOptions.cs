@@ -14,18 +14,18 @@ namespace APIVerve.API.LoremIpsumGenerator
         /// The number of paragraphs to generate
         /// </summary>
         [JsonProperty("paragraphs")]
-        public string Paragraphs { get; set; }
+        public int? Paragraphs { get; set; }
 
         /// <summary>
         /// Start the text with 'Lorem ipsum dolor sit amet'
         /// </summary>
         [JsonProperty("startwithlorem")]
-        public string Startwithlorem { get; set; }
+        public bool? Startwithlorem { get; set; }
 
         /// <summary>
         /// The maximum length of the generated text (0 for no limit)
         /// </summary>
         [JsonProperty("maxlength")]
-        public string Maxlength { get; set; }
+        public int? Maxlength { get; set; }
     }
 }
