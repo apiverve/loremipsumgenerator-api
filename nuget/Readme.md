@@ -51,7 +51,7 @@ Here's a simple example to get you started quickly:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.LoremIpsumGenerator;
 
 class Program
 {
@@ -60,10 +60,10 @@ class Program
         // Initialize the API client
         var apiClient = new LoremIpsumGeneratorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+        var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
         // Make the API call
@@ -118,7 +118,7 @@ The modern async/await pattern provides the best performance and code readabilit
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.LoremIpsumGenerator;
 
 public class Example
 {
@@ -126,10 +126,10 @@ public class Example
     {
         var apiClient = new LoremIpsumGeneratorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+        var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
@@ -152,7 +152,7 @@ If you need to use synchronous code, you can use the `Execute` method:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.LoremIpsumGenerator;
 
 public class Example
 {
@@ -160,10 +160,10 @@ public class Example
     {
         var apiClient = new LoremIpsumGeneratorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+        var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
         var response = apiClient.Execute(queryOptions);
@@ -191,7 +191,7 @@ The API client provides comprehensive error handling. Here are some examples:
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.LoremIpsumGenerator;
 
 public class Example
 {
@@ -199,10 +199,10 @@ public class Example
     {
         var apiClient = new LoremIpsumGeneratorAPIClient("[YOUR_API_KEY]");
 
-        var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+        var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
         try
@@ -245,7 +245,7 @@ public class Example
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.LoremIpsumGenerator;
 
 public class Example
 {
@@ -257,10 +257,10 @@ public class Example
         apiClient.SetMaxRetries(3);        // Retry up to 3 times (default: 0, max: 3)
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
-        var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+        var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
         try
@@ -300,10 +300,10 @@ var apiClient = new LoremIpsumGeneratorAPIClient("[YOUR_API_KEY]");
 apiClient.AddCustomHeader("X-Custom-Header", "custom-value");
 apiClient.AddCustomHeader("X-Request-ID", Guid.NewGuid().ToString());
 
-var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -328,10 +328,10 @@ apiClient.SetLogger(message =>
     Console.WriteLine($"[LOG] {DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}");
 });
 
-var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -348,10 +348,10 @@ var apiClient = new LoremIpsumGeneratorAPIClient("[YOUR_API_KEY]");
 apiClient.SetMaxRetries(3);           // Retry up to 3 times (default: 0, max: 3)
 apiClient.SetRetryDelay(1500);        // Wait 1.5 seconds between retries (default: 1000ms)
 
-var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -362,10 +362,10 @@ var response = await apiClient.ExecuteAsync(queryOptions);
 The API client implements `IDisposable` for proper resource cleanup:
 
 ```csharp
-var queryOptions = new QueryOptions {
-    paragraphs = 1,
-    startwithlorem = true,
-    maxlength = 100
+var queryOptions = new LoremIpsumGeneratorQueryOptions {
+    Paragraphs = 1,
+    Startwithlorem = true,
+    Maxlength = 100
 };
 
 using (var apiClient = new LoremIpsumGeneratorAPIClient("[YOUR_API_KEY]"))
@@ -385,9 +385,9 @@ using (var apiClient = new LoremIpsumGeneratorAPIClient("[YOUR_API_KEY]"))
   "status": "ok",
   "error": null,
   "data": {
-    "words": 62,
-    "sentences": 5,
-    "text": "Lorem ipsum dolor sit amet nulla sint eiusmod ut nulla et reprehenderit quis laborum do. Duis irure consequat ut consequat nisi non velit dolore culpa nulla. Sunt deserunt dolore culpa ex qui non laboris cillum sint labore non amet aliqua reprehenderit. Nisi culpa ea magna ea ex id. Consectetur eiusmod voluptate aliquip eu dolor anim consequat amet non deserunt enim velit incididunt."
+    "words": 73,
+    "sentences": 7,
+    "text": "Lorem ipsum dolor sit amet aliquip duis veniam dolore ea eu ex ad occaecat in sunt amet sit non esse. Proident fugiat eu nisi et duis excepteur. Aute ipsum pariatur labore do pariatur exercitation excepteur qui exercitation aliquip ut mollit. Reprehenderit ipsum velit eiusmod duis nulla. Id eu aute mollit cillum dolore adipisicing non occaecat. Laboris commodo magna occaecat officia amet sunt aliqua et enim enim incididunt in. Magna laborum irure nulla ea."
   }
 }
 ```
