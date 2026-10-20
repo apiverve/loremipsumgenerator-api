@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Lorem Ipsum Generator
   description: >-
-    Lorem Ipsum Generator is a simple tool for generating lorem ipsum text. It
-    returns the generated text.
+    Lorem Ipsum Generator generates placeholder text by paragraph count with
+    optional length limits and standard opening phrasing. Every response
+    includes the dummy copy plus word and sentence counts.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/loremipsumgenerator:
     get:
-      summary: Generate Lorem Ipsum
+      summary: Lorem Ipsum Generator
       description: Generate lorem ipsum text with a specified number of sentences or words
       operationId: loremipsumgenerator
       parameters:

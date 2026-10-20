@@ -1,13 +1,13 @@
-# [Lorem Ipsum Generator API](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Lorem Ipsum Generator API](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Lorem Ipsum Generator is a simple tool for generating lorem ipsum text. It returns the generated text.
+Lorem Ipsum Generator generates placeholder text by paragraph count with optional length limits and standard opening phrasing. Every response includes the dummy copy plus word and sentence counts.
 
 The Lorem Ipsum Generator API provides a simple, reliable way to integrate lorem ipsum generator functionality into your applications. Built for developers who need production-ready lorem ipsum generator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -163,7 +163,7 @@ go get github.com/apiverve/loremipsumgenerator-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Lorem Ipsum Generator API](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Lorem Ipsum Generator API](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/loremipsumgenerator](https://docs.apiverve.com/ref/loremipsumgenerator)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -224,7 +224,7 @@ A real response from the Lorem Ipsum Generator API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Lorem Ipsum Generator API](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Lorem Ipsum Generator API](https://apiverve.com/marketplace/loremipsumgenerator?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
