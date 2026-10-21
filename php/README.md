@@ -1,6 +1,6 @@
 # Lorem Ipsum Generator API - PHP Package
 
-Lorem Ipsum Generator is a simple tool for generating lorem ipsum text. It returns the generated text.
+Lorem Ipsum Generator generates placeholder text by paragraph count with optional length limits and standard opening phrasing. Every response includes the dummy copy plus word and sentence counts.
 
 ## Installation
 
@@ -87,11 +87,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/loremipsumgenerator?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/loremipsumgenerator?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://apiverve.com/marketplace/loremipsumgenerator?utm_source=php&utm_medium=readme](https://apiverve.com/marketplace/loremipsumgenerator?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/loremipsumgenerator?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/loremipsumgenerator?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
