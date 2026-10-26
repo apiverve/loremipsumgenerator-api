@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/loremipsumgenerator",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Lorem Ipsum Generator generates placeholder text by paragraph count with optional length limits and standard opening phrasing. Every response includes the dummy copy plus word and sentence counts.",
   "main": "index.js",
   "types": "index.d.ts",
