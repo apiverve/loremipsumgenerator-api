@@ -1,6 +1,6 @@
 name: apiverve_loremipsumgenerator
 description: "Lorem Ipsum Generator generates placeholder text by paragraph count with optional length limits and standard opening phrasing. Every response includes the dummy copy plus word and sentence counts."
-version: 1.2.5
+version: 1.2.6
 homepage: https://apiverve.com/marketplace/loremipsumgenerator?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/loremipsumgenerator-api/tree/main/dart
 
